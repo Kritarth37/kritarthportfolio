@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cont{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width:760px) {
+    .cont{
+        margin: 0 auto;
+    }
+}
+@media (min-width:990px) {
+    .cont{
+        max-width:960px;
+    }
+}
+@media (min-width:1200px) {
+    .cont{
+        margin: 0 auto;
+    }
+}
+@media (min-width:1400px) {
+    .cont{
+        max-width: 13 40px;
+    }
+}
+.experience-section{
+    padding: 65px 0 100px;
+    position: relative;
+   
+}
+.experience-section .experience-items{
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content:space-between;
+    gap: 20px;
+}
+.experience-item{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.experience-info{
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack:justify ;
+    justify-content: space-between;
+}
+.experience-info{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 1;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.progress-line{
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+    background-color:#ddd8c6;
+}
+.progress-line span{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin:left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border: 50px;
+    position: absolute;
+    background: rgb(141, 218, 209);
+background: linear-gradient(90deg, rgba(26,215,192,1) 2%, #2bbeb8 94%);
+  
+}
+.progress-line span.animate{
+    -webkit-animation: animate 1.5s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 1.5s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animate {
+    100% {
+      -webkit-transform: scaleX(1);
+      -o-transform: scaleX(1);
+  }}
+@keyframes animate {
+    100% {
+      -webkit-transform: scaleX(1);
+      -o-transform: scaleX(1);
+  }}
